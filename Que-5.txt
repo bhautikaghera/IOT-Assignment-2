@@ -1,0 +1,22 @@
+#include<WiFi.h>
+char* ssid="Redmi";
+char* password="redmi123";
+void setup() {
+  Serial.begin(9600);
+  WiFi.begin(ssid,password);
+
+  while(WiFi.status() !=WL_CONNECTED){
+    delay(500);
+    Serial.println("Connecting...\n");
+  }
+  Serial.println("IP :  ");
+  Serial.println(WiFi.localIP());
+  Serial.println("MAC address: ");
+  Serial.println(WiFi.macAddress());
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}

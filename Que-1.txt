@@ -1,0 +1,142 @@
+int a=2;
+int b=3;
+int c=4;
+int d=5;
+int e=6;
+int f=7;
+int g=8;
+int dp=9;
+int arr[10][7]={{1,0,0,1,1,1,1},
+                {0,0,1,0,0,1,0},
+                {0,0,0,0,1,1,0},
+                {1,0,0,1,1,0,0},
+                {0,1,0,0,1,0,0},
+                {0,1,0,0,0,0,0},
+                {0,0,0,1,1,1,1},
+                {0,0,0,0,0,0,0},
+                {0,0,0,1,1,0,0},
+                {0,0,0,0,0,0,1}};
+void setup() {
+  pinMode(a,OUTPUT);
+  pinMode(b,OUTPUT);
+  pinMode(c,OUTPUT);
+  pinMode(d,OUTPUT);
+  pinMode(e,OUTPUT);
+  pinMode(f,OUTPUT);
+  pinMode(g,OUTPUT);
+  pinMode(dp,OUTPUT);
+  Serial.begin(9600);
+}
+void display1(){
+      digitalWrite(b,arr[0][1]);
+      digitalWrite(c,arr[0][2]);
+      digitalWrite(d,arr[0][3]);
+      digitalWrite(e,arr[0][4]);
+      digitalWrite(f,arr[0][5]);
+      digitalWrite(g,arr[0][6]);
+}
+void display2(){
+      digitalWrite(b,arr[1][1]);
+      digitalWrite(c,arr[1][2]);
+      digitalWrite(d,arr[1][3]);
+      digitalWrite(e,arr[1][4]);
+      digitalWrite(f,arr[1][5]);
+      digitalWrite(g,arr[1][6]);
+}
+void display3(){
+      digitalWrite(b,arr[2][1]);
+      digitalWrite(c,arr[2][2]);
+      digitalWrite(d,arr[2][3]);
+      digitalWrite(e,arr[2][4]);
+      digitalWrite(f,arr[2][5]);
+      digitalWrite(g,arr[2][6]);
+}
+void display4(){
+      digitalWrite(b,arr[3][1]);
+      digitalWrite(c,arr[3][2]);
+      digitalWrite(d,arr[3][3]);
+      digitalWrite(e,arr[3][4]);
+      digitalWrite(f,arr[3][5]);
+      digitalWrite(g,arr[3][6]);
+}
+void display5(){
+      digitalWrite(b,arr[4][1]);
+      digitalWrite(c,arr[4][2]);
+      digitalWrite(d,arr[4][3]);
+      digitalWrite(e,arr[4][4]);
+      digitalWrite(f,arr[4][5]);
+      digitalWrite(g,arr[4][6]);
+}
+void display6(){
+      digitalWrite(b,arr[5][1]);
+      digitalWrite(c,arr[5][2]);
+      digitalWrite(d,arr[5][3]);
+      digitalWrite(e,arr[5][4]);
+      digitalWrite(f,arr[5][5]);
+      digitalWrite(g,arr[5][6]);
+}
+void display7(){
+      digitalWrite(b,arr[6][1]);
+      digitalWrite(c,arr[6][2]);
+      digitalWrite(d,arr[6][3]);
+      digitalWrite(e,arr[6][4]);
+      digitalWrite(f,arr[6][5]);
+      digitalWrite(g,arr[6][6]);
+}
+void display8(){
+      digitalWrite(b,arr[7][1]);
+      digitalWrite(c,arr[7][2]);
+      digitalWrite(d,arr[7][3]);
+      digitalWrite(e,arr[7][4]);
+      digitalWrite(f,arr[7][5]);
+      digitalWrite(g,arr[7][6]);
+}
+void display9(){
+      digitalWrite(b,arr[8][1]);
+      digitalWrite(c,arr[8][2]);
+      digitalWrite(d,arr[8][3]);
+      digitalWrite(e,arr[8][4]);
+      digitalWrite(f,arr[8][5]);
+      digitalWrite(g,arr[8][6]);
+}
+void display0(){
+      digitalWrite(b,arr[9][1]);
+      digitalWrite(c,arr[9][2]);
+      digitalWrite(d,arr[9][3]);
+      digitalWrite(e,arr[9][4]);
+      digitalWrite(f,arr[9][5]);
+      digitalWrite(g,arr[9][6]);
+}
+void clearDisplay(){
+  digitalWrite(a,LOW);
+  digitalWrite(b,LOW);
+  digitalWrite(c,LOW);
+  digitalWrite(d,LOW);
+  digitalWrite(e,LOW);
+  digitalWrite(f,LOW);
+  digitalWrite(g,LOW);
+}
+void loop() {
+
+      display1();
+      clearDisplay();
+      display2();
+      clearDisplay();
+      display3();
+      clearDisplay();
+      display4();
+      clearDisplay();
+      display5();
+      clearDisplay();
+      display6();
+      clearDisplay();
+      display7();
+      clearDisplay();
+      display8();
+      clearDisplay();
+      display9();
+      clearDisplay();
+      display0();
+      clearDisplay();
+      
+}
